@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download Our App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function redirect() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.bitebusiness.flappysfriedchicken&pcampaignid=web_share";
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location.href = "https://apps.apple.com/au/app/flappys-fried-chicken/id6670198182";
+      } else {
+        // fallback for desktop or unknown
+        window.location.href = "https://www.flappys.com.au";
+      }
+    }
+    window.onload = redirect;
+  </script>
+</head>
+<body>
+  <p>Redirecting to the best place to download our app...</p>
+</body>
+</html>
