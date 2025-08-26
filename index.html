@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Download Flappy's Fried Chicken App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function redirect() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent)) {
+        // 👉 Replace with your actual Play Store link
+        window.location.href = "hhttps://play.google.com/store/apps/details?id=com.bitebusiness.flappysfriedchicken&pcampaignid=web_share";
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        // 👉 Replace with your actual App Store link
+        window.location.href = "https://apps.apple.com/au/app/flappys-fried-chicken/id6670198182";
+      } else {
+        // 👉 Replace with your website or fallback link
+        window.location.href = "https://www.flappys.com.au";
+      }
+    }
+    window.onload = redirect;
+  </script>
+</head>
+<body>
+  <p>Redirecting you to the best place to download Flappy's Fried Chicken App...</p>
+</body>
+</html>
